@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Metadatos-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Elmer Vargas Salazar">
+    <meta name="description" content="Aplicación de lista de tareas, donde podrá anotar las tareas que ocupa realizar en cada jornada de trabajo o estudio. También será capaz de cotejarlas cuanto estén finalizadas o eliminarlas.">
+    <meta name="keywords" content="lista de tareas, lista, tareas, tareas por ejecutar">
+    <!--Título de Pestaña-->
+    <title>Aplicación - Lista de Tareas</title>
+    <!--Ícono de Pestaña-->
+    <link rel="shortcut icon" href="img/icono-pestaña.png" type="image/x-icon">
+    <!--Hojas de estilos - CSS-->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!--Contenedor Lista de Tareas-->
+    <main>
+        <!--Título Principal-->
+        <h1>Lista de tareas por ejecutar hoy: <span id="fecha_actual"></span></h1>
+
+        <!--Instrucciones-->
+        <article id="instrucciones"><strong>-Instrucciones: </strong>Anote y agregue cuantas tareas necesite, si finalizó alguna haga clic sobre la misma para cotejarla <span id="check">&#8730</span>. También puede presionar la <span id="x-instru">X</span> para eliminarla.</article>
+
+        <!--Bloque para escribir y añadir las tareas-->
+        <article class="bloque-tarea">
+            <p>Tarea:</p>
+            <!--Almacenar Tareas-->
+            <input type="text" id="tarea" placeholder="¿Qué vas a realizar?">
+            <!--Botón - Añadir Tareas-->
+            <a id="btn_agregar">Agregar</a>
+        </article>
+
+        <!--Interfaz que muestra las tareas añadidas-->
+        <ul id="lista-tareas"></ul>
+    </main><!--Fin Contenedor Lista de Tareas-->
+    
+    <!--Archivos JavaScript-->
+    <script src="js/lista_tareas.js"></script>
+</body>
+</html>
